@@ -1,2 +1,1 @@
-# ha-cunkute-client
-HA Cunkute Client with Vuejs 
+# App HASS mobile
