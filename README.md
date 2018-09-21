@@ -4,10 +4,30 @@
 - Tốc độ load trang nhanh hơn
 - Hỗ trợ cho router không support loopback
 - Không lưu lại password vào server
-
+- Hướng dẫn chưa được đầy đủ vì mình bận quá. BÁc nào có thể viết thay mình xong commit lên mình sẽ gộp lại cho :D Chân thành cảm ơn bác luôn đó. 
+# Hỗ trợ
+- AC, TV, Audio system component chỉ hỗ trợ Climate component
+- Hẹn giờ tắt bật trong AC, các nút chức năng khác thì thêm component input_boolean xong viết automation cho nó
+- Support webapp trên mobile, goolge tìm cách đưa 1 webapp ra màn hình thì sẽ được như hình dưới
+- Thêm nhiều component giống nhau nếu muốn bằng cách không thay đổi đoạn code này 
+```json
+"component": "room",
+```
+- Hiện tại hỗ trợ các component sau
+```json
+homeAssistant
+light
+room
+aircon
+mediaPlayer
+vacuumCleaner
+computer
+fan
+camera
+```
 # Hướng dẫn cài đặt
 
-1. Cài đặt phía hass
+## Cài đặt phía hass
 
 - Thêm password vào
 - Thêm domain vào http component, để cho phép domain truy cập vào hass
@@ -20,13 +40,17 @@ http:
     - https://myhomeiot-184105.firebaseapp.com
 ```
 
-2. Chỉnh sửa file json để custom giao diện app
-
 ## Cấu hình chung cho app
 
-<p align="center">
-  <img src="https://cdn.realtor.ca/listing/TS636668615669600000/reb93/highres/9/1117099_2.jpg"  alt="accessibility text">
-</p>
+- Nếu modem không hộ trợ loopback thì không nên download file config.json về thư mục www của hass. Up lên github sau đó copy link RAW (không dc copy link html của file). File pải đúng định dạng json nếu ko sẽ lỗi json không thể load file json.
+- Có thể nhập 2 đường dẫn Online và local giống nhau nếu có loopback.
+- Không lưu lại pass ở server nên cứ thoải mái dùng :D không tin cứ check thử :D
+- Xóa những entity không có trong hass ở json đi vì có thể phát sinh lỗi ko mong muốn
+- Sai ở đâu sẽ ko hiện component đó nên quay lại chỗ đó check lại entity xem đúng như trong hass chưa
+  <p align="center">
+    <img src="https://raw.githubusercontent.com/keitetran/ha-cunkute-client/master/img/myhomeiot-184105.firebaseapp.com_(iPhone%206_7_8)%20(1).png"  style="width:50%; float:left;" alt="accessibility text">
+     <img src="https://raw.githubusercontent.com/keitetran/ha-cunkute-client/master/img/myhomeiot-184105.firebaseapp.com_(iPhone%206_7_8).png"  style="width:50%" alt="accessibility text">
+  </p>
 
 ```json
 "system": {
@@ -89,7 +113,7 @@ Set biến show bằng false nếu muốn ẩn, true nếu muốn hiện
 },
 ```
 
-## Cấu hình danh sách device bắt đầu từ dòng devices
+## Component homeAssistant
 
 ```json
 {
