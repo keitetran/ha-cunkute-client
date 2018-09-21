@@ -5,6 +5,9 @@
 - Hỗ trợ cho router không support loopback
 - Không lưu lại password vào server
 - Hướng dẫn chưa được đầy đủ vì mình bận quá. BÁc nào có thể viết thay mình xong commit lên mình sẽ gộp lại cho :D Chân thành cảm ơn bác luôn đó. 
+# Đường dẫn UI 
+https://myhomeiot-184105.firebaseapp.com
+
 # Hỗ trợ
 - AC, TV, Audio system component chỉ hỗ trợ Climate component
 - Hẹn giờ tắt bật trong AC, các nút chức năng khác thì thêm component input_boolean xong viết automation cho nó
