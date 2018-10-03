@@ -1,5 +1,5 @@
 # App HASS mobile
-
+- Change log https://github.com/keitetran/ha-cunkute-client/wiki/Change-log
 - Giao diện trực quan, đơn giản hơn.
 - Tốc độ load trang nhanh hơn
 - Hỗ trợ cho router không support loopback
