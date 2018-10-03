@@ -1,3 +1,5 @@
+# Change log 
+- https://github.com/keitetran/ha-cunkute-client/wiki/Change-log
 # App HASS mobile
 - Change log https://github.com/keitetran/ha-cunkute-client/wiki/Change-log
 - Giao diện trực quan, đơn giản hơn.
